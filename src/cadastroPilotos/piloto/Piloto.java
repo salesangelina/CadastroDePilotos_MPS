@@ -8,7 +8,7 @@
  * 
  * Descrição da Classe:
  */
-package cadastroPilotos.piloto;
+package piloto;
 
 import java.util.LinkedList;
 
@@ -18,12 +18,13 @@ public class Piloto {
     private String endereco;
     private String fone;
     private String mail;
-    private String breve;
+    public String breve;
     private String registroP;
-    private LinkedList<Titulacao> titulacoes;
+    private LinkedList<CHT> titulacoes;
     private LinkedList<ExpProfissional> expProfissional;
     private LinkedList<TipoAeronave> tipoAeronave;
     private int qtde_titulacoes, qtde_exp, qtde_tip;
+    public boolean cma;
 
     public Piloto(String nome, String endereco, String fone, String mail, String breve, String registroP) {
         this.nome = nome;
@@ -41,7 +42,7 @@ public class Piloto {
     }
 
     public Piloto(String nome, String endereco, String fone, String mail, String breve,
-            String registroP, LinkedList<Titulacao> tit, int qtde1, LinkedList<ExpProfissional> exp,
+            String registroP, LinkedList<CHT> tit, int qtde1, LinkedList<ExpProfissional> exp,
             int qtde2, LinkedList<TipoAeronave> tip, int qtde3) {
         this.nome = nome;
         this.endereco = endereco;
@@ -58,7 +59,7 @@ public class Piloto {
 
     }
 
-    public void addTitulacao(Titulacao titulacao) {
+    public void addTitulacao(CHT titulacao) {
         titulacoes.add(titulacao);
         qtde_titulacoes++;
     }
@@ -97,7 +98,7 @@ public class Piloto {
         return registroP;
     }
     
-    public LinkedList<Titulacao> getTitulacao() {
+    public LinkedList<CHT> getTitulacao() {
         return titulacoes;
     }
 

@@ -9,22 +9,21 @@
  * Descrição da Classe:
  */
 
-package cadastroPilotos.piloto;
+package piloto;
 
-import cadastroPilotos.Cadastro;
-
+	
 public class TipoAeronave{
     private String modelo;
     private int capacidadePassageiros;
     private int horasDeVoo;
     private int qtde;
-
+    
     public TipoAeronave(String modelo, int capacidadePassageiros, int horasDeVoo){
         this.modelo = modelo;
         this.capacidadePassageiros = capacidadePassageiros;
         this.horasDeVoo = horasDeVoo;
     }
-
+         
     public String getModelo(){
         return modelo;
     }
@@ -45,8 +44,13 @@ public class TipoAeronave{
         this.capacidadePassageiros = capacidadePassageiros;
     }
 
+    /**
+     *
+     * @param horasDeVoo
+     */
     public void setHorasDeVoo(int horasDeVoo) {
         this.horasDeVoo = horasDeVoo;
     }
     
 }
+

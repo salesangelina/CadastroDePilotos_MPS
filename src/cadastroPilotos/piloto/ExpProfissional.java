@@ -9,7 +9,7 @@
  * Descrição da Classe:
  */
 
-package cadastroPilotos.piloto;
+package piloto;
 
 public class ExpProfissional{
 
